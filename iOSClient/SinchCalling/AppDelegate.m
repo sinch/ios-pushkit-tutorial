@@ -69,40 +69,9 @@
     voipRegistry.desiredPushTypes = [NSSet setWithObject:PKPushTypeVoIP];
 }	
 
--(AFHTTPSessionManager*)getManager
-{
-    AFHTTPSessionManager* manager = [[AFHTTPSessionManager alloc] init];
-    manager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:@"http://yoururl/"]];
-    manager.responseSerializer = [AFJSONResponseSerializer serializer];
-    return manager;
-}
-
--(AFHTTPSessionManager*)getJsonManager
-{
-    AFHTTPSessionManager* manager = [self getManager];
-    manager.requestSerializer = [AFJSONRequestSerializer serializer];
-    return manager;
-}
-
 -(void)pushRegistry:(PKPushRegistry *)registry didUpdatePushCredentials:(PKPushCredentials *)credentials forType:(NSString *)type
 {
-
-   
-    NSString* deviceToken = [[[[credentials.token description]
-                               stringByReplacingOccurrencesOfString: @"<" withString: @""]
-                              stringByReplacingOccurrencesOfString: @">" withString: @""]
-                             stringByReplacingOccurrencesOfString: @" " withString: @""] ;
-    NSData* tokenData =[deviceToken dataUsingEncoding:NSUTF8StringEncoding];
     [_client registerPushNotificationData:credentials.token];
-    AFHTTPSessionManager* manager = [self getManager];
-    [manager GET:[@"regdevice?token=" stringByAppendingString:deviceToken] parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-        NSLog(@"posted token");
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"posted token error %@", error);
-    }];
-    
-    
-    ///send to surver
 }
 
 -(void)pushRegistry:(PKPushRegistry *)registry didReceiveIncomingPushWithPayload:(PKPushPayload *)payload forType:(NSString *)type

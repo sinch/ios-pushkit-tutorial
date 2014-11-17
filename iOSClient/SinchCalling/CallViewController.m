@@ -52,7 +52,6 @@
 
 #pragma mark - SINCallDelegate
 -(void)call:(id<SINCall>)call shouldSendPushNotifications:(NSArray *)pushPairs{
-    NSLog(@"should send push");
     id<SINPushPair> pdata = [pushPairs lastObject];
     NSMutableDictionary* dic = [[NSMutableDictionary alloc] init];
     [dic setObject:pdata.pushPayload forKey:@"pushPayload"];
@@ -60,15 +59,19 @@
                                stringByReplacingOccurrencesOfString: @"<" withString: @""]
                               stringByReplacingOccurrencesOfString: @">" withString: @""]
                              stringByReplacingOccurrencesOfString: @" " withString: @""] ;
-    NSString* token = [[NSString alloc] initWithData:pdata.pushData encoding:NSUTF8StringEncoding];
     [dic setObject:deviceToken forKey:@"pushData"];
-    AFHTTPSessionManager* manager = [((AppDelegate*)[UIApplication sharedApplication].delegate) getJsonManager];
-    [manager POST:@"<yoururl>" parameters:dic success:^(NSURLSessionDataTask *task, id responseObject) {
-            //we dont want to do anything here
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic
+                                                       options:0
+                                                         error:nil];
     
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-            //we dont want to do anything here
-    }];
+    
+    NSMutableURLRequest* req = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"<yourserver>"]];
+    [req setHTTPMethod:@"POST"];
+    NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
+    [sessionConfig setHTTPAdditionalHeaders:@{@"Accept": @"application/json"}];
+    [sessionConfig setHTTPAdditionalHeaders:@{@"content-type": @"application/json"}];
+    NSURLSession* session = [NSURLSession sessionWithConfiguration:sessionConfig];
+    [[session uploadTaskWithRequest:req fromData:jsonData] resume];
 }
 
 - (void)callDidProgress:(id<SINCall>)call {

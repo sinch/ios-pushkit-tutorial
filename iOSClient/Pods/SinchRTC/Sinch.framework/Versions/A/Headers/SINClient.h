@@ -191,6 +191,14 @@ typedef NS_ENUM(NSInteger, SINLogSeverity) {
 - (void)terminate;
 
 /**
+* Terminates the client, while still leaving it some time to finish up currently
+* pending tasks, for example finishing pending HTTP requests.
+*
+* See -[SINClient terminate].
+*/
+- (void)terminateGracefully;
+
+/**
  * THIS METHOD IS DEPRECATED. See -[SINClient terminate]
  */
 - (void)stop;

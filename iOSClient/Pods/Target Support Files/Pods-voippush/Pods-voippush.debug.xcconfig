@@ -1,7 +1,7 @@
 FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/SinchRTC"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/SinchRTC"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/SinchRTC"
-OTHER_LDFLAGS = -ObjC -l"Pods-voippush-AFNetworking" -l"Pods-voippush-SinchRTC" -l"stdc++.6.0.9" -framework "AVFoundation" -framework "AudioToolbox" -framework "CoreGraphics" -framework "MobileCoreServices" -framework "Security" -framework "Sinch" -framework "SystemConfiguration"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/SinchRTC"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/SinchRTC"
+OTHER_LDFLAGS = -ObjC -l"Pods-voippush-SinchRTC" -l"stdc++.6.0.9" -framework "AVFoundation" -framework "AudioToolbox" -framework "Security" -framework "Sinch"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
 PODS_ROOT = ${SRCROOT}/Pods
