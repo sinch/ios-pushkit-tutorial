@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77B9EF6719F2980000921B7C /* libPods-voippush-AFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B9EF6419F2980000921B7C /* libPods-voippush-AFNetworking.a */; };
+		77B9EF6819F2980000921B7C /* libPods-voippush-SinchRTC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B9EF6519F2980000921B7C /* libPods-voippush-SinchRTC.a */; };
+		77B9EF6919F2980000921B7C /* libPods-voippush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B9EF6619F2980000921B7C /* libPods-voippush.a */; };
+		77F5945E19E27FCF007CD697 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F5945D19E27FCF007CD697 /* PushKit.framework */; };
+		80DB7DD81918BE35007BD221 /* bg_drop-shadow_320x430@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DB7DC61918BE35007BD221 /* bg_drop-shadow_320x430@2x.png */; };
+		80DB7DD91918BE35007BD221 /* bg_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DB7DC71918BE35007BD221 /* bg_shadow@2x.png */; };
+		80DB7DDA1918BE35007BD221 /* big_red_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DB7DC81918BE35007BD221 /* big_red_normal.png */; };
+		80DB7DDB1918BE35007BD221 /* big_red_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DB7DC91918BE35007BD221 /* big_red_pressed.png */; };
+		80DB7DDC1918BE35007BD221 /* Call_bg-320x305@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DB7DCA1918BE35007BD221 /* Call_bg-320x305@2x.png */; };
+		80DB7DDD1918BE35007BD221 /* call_btn_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DB7DCB1918BE35007BD221 /* call_btn_normal@2x.png */; };
+		80DB7DDE1918BE35007BD221 /* callbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DB7DCC1918BE35007BD221 /* callbg.png */; };
+		80DB7DE31918BE35007BD221 /* Login_btn_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DB7DD11918BE35007BD221 /* Login_btn_normal@2x.png */; };
+		80DB7DE41918BE35007BD221 /* Login_btn_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DB7DD21918BE35007BD221 /* Login_btn_pressed@2x.png */; };
+		80DB7DE51918BE35007BD221 /* logo-297x142@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DB7DD31918BE35007BD221 /* logo-297x142@2x.png */; };
+		80DB7DE61918BE35007BD221 /* small_green_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DB7DD41918BE35007BD221 /* small_green_normal.png */; };
+		80DB7DE71918BE35007BD221 /* small_green_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DB7DD51918BE35007BD221 /* small_green_pressed.png */; };
+		80DB7DE81918BE35007BD221 /* small_red_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DB7DD61918BE35007BD221 /* small_red_normal.png */; };
+		80DB7DE91918BE35007BD221 /* small_red_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DB7DD71918BE35007BD221 /* small_red_pressed.png */; };
+		907E5ABD190FE0A8006440D6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E5ABC190FE0A8006440D6 /* LoginViewController.m */; };
+		90A0E51F1911393100A4F080 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90A0E51E1911393100A4F080 /* Images.xcassets */; };
+		CF01D76717CE247200F206C9 /* ringback.wav in Resources */ = {isa = PBXBuildFile; fileRef = CF01D76517CE247200F206C9 /* ringback.wav */; };
+		CF01D76817CE247200F206C9 /* incoming.wav in Resources */ = {isa = PBXBuildFile; fileRef = CF01D76617CE247200F206C9 /* incoming.wav */; };
+		CF0C0BAD1668C5CF00ABA260 /* AppDelegate+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0C0BAC1668C5CF00ABA260 /* AppDelegate+UI.m */; };
+		CF2B327A1664EF6A0024D977 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2B32791664EF6A0024D977 /* UIKit.framework */; };
+		CF2B327C1664EF6A0024D977 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2B327B1664EF6A0024D977 /* Foundation.framework */; };
+		CF2B327E1664EF6A0024D977 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2B327D1664EF6A0024D977 /* AVFoundation.framework */; };
+		CF2B32801664EF6A0024D977 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2B327F1664EF6A0024D977 /* AudioToolbox.framework */; };
+		CF2B32821664EF6A0024D977 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2B32811664EF6A0024D977 /* Security.framework */; };
+		CF2B329C1664EF6A0024D977 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2B329B1664EF6A0024D977 /* main.m */; };
+		CF2B329F1664EF6A0024D977 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2B329E1664EF6A0024D977 /* AppDelegate.m */; };
+		CF2B32A21664EF6A0024D977 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2B32A11664EF6A0024D977 /* MainViewController.m */; };
+		CF2B32A41664EF6A0024D977 /* MainStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2B32A31664EF6A0024D977 /* MainStoryBoard.storyboard */; };
+		CF2B32B91664F12A0024D977 /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2B32B81664F12A0024D977 /* CallViewController.m */; };
+		CF534B6B166F827400B384DA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF534B67166F823C00B384DA /* SystemConfiguration.framework */; };
+		CF742B6C16681EE400D9897B /* MainViewController+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = CF742B6B16681EE400D9897B /* MainViewController+UI.m */; };
+		CF742B7016681F5500D9897B /* CallViewController+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = CF742B6F16681F5500D9897B /* CallViewController+UI.m */; };
+		CF7DF58016C51A6B0057130D /* Sinch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7DF57F16C51A6B0057130D /* Sinch.framework */; };
+		CF816CCB166D5FF400FEF7D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF816CCA166D5FF400FEF7D2 /* CoreGraphics.framework */; };
+		CFC738A31918CE56000D466A /* PaddedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC738A21918CE56000D466A /* PaddedTextField.m */; };
+		CFE40D7817CE013100237EA3 /* SINUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE40D7717CE013100237EA3 /* SINUIViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A2C1EFF6DD3F3BAD89CBD27 /* Pods-voippush.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voippush.release.xcconfig"; path = "Pods/Target Support Files/Pods-voippush/Pods-voippush.release.xcconfig"; sourceTree = "<group>"; };
+		77B9EF6419F2980000921B7C /* libPods-voippush-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-voippush-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-voippush-AFNetworking.a"; sourceTree = "<group>"; };
+		77B9EF6519F2980000921B7C /* libPods-voippush-SinchRTC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-voippush-SinchRTC.a"; path = "Pods/build/Debug-iphoneos/libPods-voippush-SinchRTC.a"; sourceTree = "<group>"; };
+		77B9EF6619F2980000921B7C /* libPods-voippush.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-voippush.a"; path = "Pods/build/Debug-iphoneos/libPods-voippush.a"; sourceTree = "<group>"; };
+		77F5945D19E27FCF007CD697 /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
+		80DB7DC61918BE35007BD221 /* bg_drop-shadow_320x430@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg_drop-shadow_320x430@2x.png"; path = "Resources/bg_drop-shadow_320x430@2x.png"; sourceTree = "<group>"; };
+		80DB7DC71918BE35007BD221 /* bg_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg_shadow@2x.png"; path = "Resources/bg_shadow@2x.png"; sourceTree = "<group>"; };
+		80DB7DC81918BE35007BD221 /* big_red_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = big_red_normal.png; path = Resources/big_red_normal.png; sourceTree = "<group>"; };
+		80DB7DC91918BE35007BD221 /* big_red_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = big_red_pressed.png; path = Resources/big_red_pressed.png; sourceTree = "<group>"; };
+		80DB7DCA1918BE35007BD221 /* Call_bg-320x305@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Call_bg-320x305@2x.png"; path = "Resources/Call_bg-320x305@2x.png"; sourceTree = "<group>"; };
+		80DB7DCB1918BE35007BD221 /* call_btn_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "call_btn_normal@2x.png"; path = "Resources/call_btn_normal@2x.png"; sourceTree = "<group>"; };
+		80DB7DCC1918BE35007BD221 /* callbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = callbg.png; path = Resources/callbg.png; sourceTree = "<group>"; };
+		80DB7DD11918BE35007BD221 /* Login_btn_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Login_btn_normal@2x.png"; path = "Resources/Login_btn_normal@2x.png"; sourceTree = "<group>"; };
+		80DB7DD21918BE35007BD221 /* Login_btn_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Login_btn_pressed@2x.png"; path = "Resources/Login_btn_pressed@2x.png"; sourceTree = "<group>"; };
+		80DB7DD31918BE35007BD221 /* logo-297x142@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-297x142@2x.png"; path = "Resources/logo-297x142@2x.png"; sourceTree = "<group>"; };
+		80DB7DD41918BE35007BD221 /* small_green_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = small_green_normal.png; path = Resources/small_green_normal.png; sourceTree = "<group>"; };
+		80DB7DD51918BE35007BD221 /* small_green_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = small_green_pressed.png; path = Resources/small_green_pressed.png; sourceTree = "<group>"; };
+		80DB7DD61918BE35007BD221 /* small_red_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = small_red_normal.png; path = Resources/small_red_normal.png; sourceTree = "<group>"; };
+		80DB7DD71918BE35007BD221 /* small_red_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = small_red_pressed.png; path = Resources/small_red_pressed.png; sourceTree = "<group>"; };
+		907E5ABB190FE0A8006440D6 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		907E5ABC190FE0A8006440D6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		90A0E51E1911393100A4F080 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A919D1BB0AD5471E92751C1A /* libPods-voippush.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-voippush.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF01D76517CE247200F206C9 /* ringback.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ringback.wav; path = Resources/ringback.wav; sourceTree = "<group>"; };
+		CF01D76617CE247200F206C9 /* incoming.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = incoming.wav; path = Resources/incoming.wav; sourceTree = "<group>"; };
+		CF04B59717BBD35F00026D30 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CF0C0BAB1668C5CF00ABA260 /* AppDelegate+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+UI.h"; sourceTree = "<group>"; };
+		CF0C0BAC1668C5CF00ABA260 /* AppDelegate+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+UI.m"; sourceTree = "<group>"; };
+		CF2B32751664EF6A0024D977 /* voippush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voippush.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2B32791664EF6A0024D977 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CF2B327B1664EF6A0024D977 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF2B327D1664EF6A0024D977 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CF2B327F1664EF6A0024D977 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CF2B32811664EF6A0024D977 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CF2B329A1664EF6A0024D977 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		CF2B329B1664EF6A0024D977 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF2B329D1664EF6A0024D977 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF2B329E1664EF6A0024D977 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF2B32A01664EF6A0024D977 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		CF2B32A11664EF6A0024D977 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		CF2B32A31664EF6A0024D977 /* MainStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryBoard.storyboard; sourceTree = "<group>"; };
+		CF2B32A51664EF6A0024D977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		CF2B32B71664F12A0024D977 /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
+		CF2B32B81664F12A0024D977 /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallViewController.m; sourceTree = "<group>"; };
+		CF534B67166F823C00B384DA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CF534B69166F825B00B384DA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CF742B6B16681EE400D9897B /* MainViewController+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MainViewController+UI.m"; sourceTree = "<group>"; };
+		CF742B6E16681F5500D9897B /* CallViewController+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CallViewController+UI.h"; sourceTree = "<group>"; };
+		CF742B6F16681F5500D9897B /* CallViewController+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CallViewController+UI.m"; sourceTree = "<group>"; };
+		CF7DF57F16C51A6B0057130D /* Sinch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sinch.framework; path = ../Sinch.framework; sourceTree = SOURCE_ROOT; };
+		CF816CCA166D5FF400FEF7D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CFC738A11918CE56000D466A /* PaddedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaddedTextField.h; sourceTree = "<group>"; };
+		CFC738A21918CE56000D466A /* PaddedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaddedTextField.m; sourceTree = "<group>"; };
+		CFE40D7617CE013100237EA3 /* SINUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SINUIViewController.h; sourceTree = "<group>"; };
+		CFE40D7717CE013100237EA3 /* SINUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SINUIViewController.m; sourceTree = "<group>"; };
+		FCE91FEFF052F1CFBAE6F757 /* Pods-voippush.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voippush.debug.xcconfig"; path = "Pods/Target Support Files/Pods-voippush/Pods-voippush.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF2B32721664EF6A0024D977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77B9EF6719F2980000921B7C /* libPods-voippush-AFNetworking.a in Frameworks */,
+				77B9EF6819F2980000921B7C /* libPods-voippush-SinchRTC.a in Frameworks */,
+				77B9EF6919F2980000921B7C /* libPods-voippush.a in Frameworks */,
+				77F5945E19E27FCF007CD697 /* PushKit.framework in Frameworks */,
+				CF534B6B166F827400B384DA /* SystemConfiguration.framework in Frameworks */,
+				CF2B327A1664EF6A0024D977 /* UIKit.framework in Frameworks */,
+				CF2B327C1664EF6A0024D977 /* Foundation.framework in Frameworks */,
+				CF2B327E1664EF6A0024D977 /* AVFoundation.framework in Frameworks */,
+				CF2B32801664EF6A0024D977 /* AudioToolbox.framework in Frameworks */,
+				CF2B32821664EF6A0024D977 /* Security.framework in Frameworks */,
+				CF816CCB166D5FF400FEF7D2 /* CoreGraphics.framework in Frameworks */,
+				CF7DF58016C51A6B0057130D /* Sinch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF2B326A1664EF6A0024D977 = {
+			isa = PBXGroup;
+			children = (
+				CF2B32831664EF6A0024D977 /* voipopush */,
+				CF2B32781664EF6A0024D977 /* Frameworks */,
+				CF2B32761664EF6A0024D977 /* Products */,
+				EC67DB79DE71A7B29F1317EA /* Pods */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
+		};
+		CF2B32761664EF6A0024D977 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF2B32751664EF6A0024D977 /* voippush.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF2B32781664EF6A0024D977 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77B9EF6419F2980000921B7C /* libPods-voippush-AFNetworking.a */,
+				77B9EF6519F2980000921B7C /* libPods-voippush-SinchRTC.a */,
+				77B9EF6619F2980000921B7C /* libPods-voippush.a */,
+				77F5945D19E27FCF007CD697 /* PushKit.framework */,
+				CF04B59717BBD35F00026D30 /* libsqlite3.dylib */,
+				CF7DF57F16C51A6B0057130D /* Sinch.framework */,
+				CF2B32791664EF6A0024D977 /* UIKit.framework */,
+				CF2B327B1664EF6A0024D977 /* Foundation.framework */,
+				CF2B327D1664EF6A0024D977 /* AVFoundation.framework */,
+				CF816CCA166D5FF400FEF7D2 /* CoreGraphics.framework */,
+				CF2B327F1664EF6A0024D977 /* AudioToolbox.framework */,
+				CF534B69166F825B00B384DA /* CFNetwork.framework */,
+				CF534B67166F823C00B384DA /* SystemConfiguration.framework */,
+				CF2B32811664EF6A0024D977 /* Security.framework */,
+				A919D1BB0AD5471E92751C1A /* libPods-voippush.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF2B32831664EF6A0024D977 /* voipopush */ = {
+			isa = PBXGroup;
+			children = (
+				CF2B329D1664EF6A0024D977 /* AppDelegate.h */,
+				CF2B329E1664EF6A0024D977 /* AppDelegate.m */,
+				907E5ABB190FE0A8006440D6 /* LoginViewController.h */,
+				907E5ABC190FE0A8006440D6 /* LoginViewController.m */,
+				CF2B32A01664EF6A0024D977 /* MainViewController.h */,
+				CF2B32A11664EF6A0024D977 /* MainViewController.m */,
+				CF2B32B71664F12A0024D977 /* CallViewController.h */,
+				CF2B32B81664F12A0024D977 /* CallViewController.m */,
+				CFAE8CDE17CCB003006BDD66 /* UI extras */,
+				CF2B32841664EF6A0024D977 /* Resources */,
+				CF2B32991664EF6A0024D977 /* Supporting Files */,
+				90A0E51E1911393100A4F080 /* Images.xcassets */,
+			);
+			name = voipopush;
+			path = SinchCalling;
+			sourceTree = "<group>";
+		};
+		CF2B32841664EF6A0024D977 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF2B32A31664EF6A0024D977 /* MainStoryBoard.storyboard */,
+				CF2B32A51664EF6A0024D977 /* Info.plist */,
+				CF2B32F3166507600024D977 /* images */,
+				CF5F9CA31667B17300D940E9 /* sound */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CF2B32991664EF6A0024D977 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF2B329A1664EF6A0024D977 /* Prefix.pch */,
+				CF2B329B1664EF6A0024D977 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF2B32F3166507600024D977 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				80DB7DC61918BE35007BD221 /* bg_drop-shadow_320x430@2x.png */,
+				80DB7DC71918BE35007BD221 /* bg_shadow@2x.png */,
+				80DB7DC81918BE35007BD221 /* big_red_normal.png */,
+				80DB7DC91918BE35007BD221 /* big_red_pressed.png */,
+				80DB7DCA1918BE35007BD221 /* Call_bg-320x305@2x.png */,
+				80DB7DCB1918BE35007BD221 /* call_btn_normal@2x.png */,
+				80DB7DCC1918BE35007BD221 /* callbg.png */,
+				80DB7DD11918BE35007BD221 /* Login_btn_normal@2x.png */,
+				80DB7DD21918BE35007BD221 /* Login_btn_pressed@2x.png */,
+				80DB7DD31918BE35007BD221 /* logo-297x142@2x.png */,
+				80DB7DD41918BE35007BD221 /* small_green_normal.png */,
+				80DB7DD51918BE35007BD221 /* small_green_pressed.png */,
+				80DB7DD61918BE35007BD221 /* small_red_normal.png */,
+				80DB7DD71918BE35007BD221 /* small_red_pressed.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		CF5F9CA31667B17300D940E9 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				CF01D76517CE247200F206C9 /* ringback.wav */,
+				CF01D76617CE247200F206C9 /* incoming.wav */,
+			);
+			name = sound;
+			sourceTree = "<group>";
+		};
+		CFAE8CDE17CCB003006BDD66 /* UI extras */ = {
+			isa = PBXGroup;
+			children = (
+				CF742B6B16681EE400D9897B /* MainViewController+UI.m */,
+				CF742B6E16681F5500D9897B /* CallViewController+UI.h */,
+				CF742B6F16681F5500D9897B /* CallViewController+UI.m */,
+				CF0C0BAB1668C5CF00ABA260 /* AppDelegate+UI.h */,
+				CF0C0BAC1668C5CF00ABA260 /* AppDelegate+UI.m */,
+				CFE40D7617CE013100237EA3 /* SINUIViewController.h */,
+				CFE40D7717CE013100237EA3 /* SINUIViewController.m */,
+				CFC738A11918CE56000D466A /* PaddedTextField.h */,
+				CFC738A21918CE56000D466A /* PaddedTextField.m */,
+			);
+			name = "UI extras";
+			sourceTree = "<group>";
+		};
+		EC67DB79DE71A7B29F1317EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCE91FEFF052F1CFBAE6F757 /* Pods-voippush.debug.xcconfig */,
+				2A2C1EFF6DD3F3BAD89CBD27 /* Pods-voippush.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF2B32741664EF6A0024D977 /* voippush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2B32A81664EF6A0024D977 /* Build configuration list for PBXNativeTarget "voippush" */;
+			buildPhases = (
+				0D97C90530BD42E7B82873CF /* Check Pods Manifest.lock */,
+				CF2B32711664EF6A0024D977 /* Sources */,
+				CF2B32721664EF6A0024D977 /* Frameworks */,
+				CF2B32731664EF6A0024D977 /* Resources */,
+				30A6297D49BA475C94D6C7B1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = voippush;
+			productName = SinchCalling;
+			productReference = CF2B32751664EF6A0024D977 /* voippush.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF2B326C1664EF6A0024D977 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					CF2B32741664EF6A0024D977 = {
+						DevelopmentTeam = FC4XN2J4CS;
+					};
+				};
+			};
+			buildConfigurationList = CF2B326F1664EF6A0024D977 /* Build configuration list for PBXProject "voippush" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF2B326A1664EF6A0024D977;
+			productRefGroup = CF2B32761664EF6A0024D977 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF2B32741664EF6A0024D977 /* voippush */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF2B32731664EF6A0024D977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90A0E51F1911393100A4F080 /* Images.xcassets in Resources */,
+				80DB7DE81918BE35007BD221 /* small_red_normal.png in Resources */,
+				80DB7DE61918BE35007BD221 /* small_green_normal.png in Resources */,
+				80DB7DDC1918BE35007BD221 /* Call_bg-320x305@2x.png in Resources */,
+				CF2B32A41664EF6A0024D977 /* MainStoryBoard.storyboard in Resources */,
+				CF01D76717CE247200F206C9 /* ringback.wav in Resources */,
+				80DB7DD81918BE35007BD221 /* bg_drop-shadow_320x430@2x.png in Resources */,
+				80DB7DDE1918BE35007BD221 /* callbg.png in Resources */,
+				80DB7DE41918BE35007BD221 /* Login_btn_pressed@2x.png in Resources */,
+				80DB7DE71918BE35007BD221 /* small_green_pressed.png in Resources */,
+				80DB7DDB1918BE35007BD221 /* big_red_pressed.png in Resources */,
+				80DB7DD91918BE35007BD221 /* bg_shadow@2x.png in Resources */,
+				80DB7DE91918BE35007BD221 /* small_red_pressed.png in Resources */,
+				80DB7DE51918BE35007BD221 /* logo-297x142@2x.png in Resources */,
+				CF01D76817CE247200F206C9 /* incoming.wav in Resources */,
+				80DB7DE31918BE35007BD221 /* Login_btn_normal@2x.png in Resources */,
+				80DB7DDD1918BE35007BD221 /* call_btn_normal@2x.png in Resources */,
+				80DB7DDA1918BE35007BD221 /* big_red_normal.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D97C90530BD42E7B82873CF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		30A6297D49BA475C94D6C7B1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-voippush/Pods-voippush-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF2B32711664EF6A0024D977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2B329C1664EF6A0024D977 /* main.m in Sources */,
+				CF2B329F1664EF6A0024D977 /* AppDelegate.m in Sources */,
+				CF2B32A21664EF6A0024D977 /* MainViewController.m in Sources */,
+				CF2B32B91664F12A0024D977 /* CallViewController.m in Sources */,
+				CF742B6C16681EE400D9897B /* MainViewController+UI.m in Sources */,
+				CFC738A31918CE56000D466A /* PaddedTextField.m in Sources */,
+				907E5ABD190FE0A8006440D6 /* LoginViewController.m in Sources */,
+				CF742B7016681F5500D9897B /* CallViewController+UI.m in Sources */,
+				CFE40D7817CE013100237EA3 /* SINUIViewController.m in Sources */,
+				CF0C0BAD1668C5CF00ABA260 /* AppDelegate+UI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CF2B32A61664EF6A0024D977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+					i386,
+				);
+				ARCHS_STANDARD = "armv7 armv7s";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF2B32A71664EF6A0024D977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+					i386,
+				);
+				ARCHS_STANDARD = "armv7 armv7s";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					"NS_BLOCK_ASSERTIONS=1",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		CF2B32A91664EF6A0024D977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCE91FEFF052F1CFBAE6F757 /* Pods-voippush.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv7s,
+					i386,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/..\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SinchCalling/Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = SinchCalling/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-Xlinker",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = voippush;
+				PROVISIONING_PROFILE = "f80fe3d3-1aa7-435f-87d9-5acb889ac4c7";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CF2B32AA1664EF6A0024D977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A2C1EFF6DD3F3BAD89CBD27 /* Pods-voippush.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv7s,
+					i386,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/..\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SinchCalling/Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = SinchCalling/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-Xlinker",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = voippush;
+				PROVISIONING_PROFILE = "f80fe3d3-1aa7-435f-87d9-5acb889ac4c7";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF2B326F1664EF6A0024D977 /* Build configuration list for PBXProject "voippush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2B32A61664EF6A0024D977 /* Debug */,
+				CF2B32A71664EF6A0024D977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2B32A81664EF6A0024D977 /* Build configuration list for PBXNativeTarget "voippush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2B32A91664EF6A0024D977 /* Debug */,
+				CF2B32AA1664EF6A0024D977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF2B326C1664EF6A0024D977 /* Project object */;
+}
