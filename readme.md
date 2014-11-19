@@ -46,13 +46,13 @@ In the member center, create an App ID. I am going to call mine com.sinch.pushki
 
 Head over to https://developer.apple.com/account/ios/certificate/certificateCreate.action and you will notice that there is a new kind of certificate here.
 
-![](images/voipcert.png) 
+![voip certificate](images/voipcert.png) 
 
 Click next and select your App ID.
  
 Download the certificate and in keychain access search for VoIP, control+click to export the certificate with private key and save it.
 
-![](images/voipcert.png) 
+![voip certificate](images/voipcert.png) 
 
 Create a development provisioning profile for the com.sinch.pushkit
 
@@ -61,7 +61,7 @@ In this tutorial I am going to use very simple push framework from nuget and sim
 
 What we need to do is to implement one method to send the actual push messages. Lets start! Launch your Visual studio and create a empty MVC project with Web API enabled. 
 
-![](images/setupmvcproject.png)
+![mvc project](images/setupmvcproject.png)
 
 I am going to host the site in azure but you can host wherever you want.
 Update all nuget packages and install PushSharp in package manager console.
@@ -134,14 +134,14 @@ That’s it. Publish it to a website that your iPhone can access.
 Open the Sinch calling app sample in the Sinch SDK (or copy it if you want to save the vanilla sample).
 Rename the project your App ID, in my case push kit, then click the project and select your target and change bundle identifier to your app id.
 
-![](images/changenamespace.png) 
+![chance name space](images/changenamespace.png) 
 
 Make sure you download the provisioning profile for the app *(Xcode/preferences/accounts/viewdetails/ and click on the refresh button)* Phew! It's so much work to just set up the basics. Let the coding begin.
 
 ## Implement Registration Of Push Kit
 First add push kit framework to your project in buildphases:
 
-![](images/addpushkit.png) 
+![add pushkit](images/addpushkit.png) 
 
 Then, add import and protocol for push kit to AppDelegate.h:
 ```objectivec
