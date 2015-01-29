@@ -36,7 +36,7 @@ It only works on iOS8. With our SDK (and probably any WebRTC SDK) in only works 
 - Install Xcode 6.1 http://developer.apple.com
 - Install iOS 8.1 beta on an iOS device
 - Create an account with Sinch http://sinch.com/dashboard/#/signup
-- Download the SDK http://sinch.com/downloads (we are going to use the sample calling app, so download the SDK instead of cocoapods)
+- Download the SDK [https://www.sinch.com/downloads/](https://www.sinch.com/downloads/) (we are going to use the sample calling app, so download the SDK instead of cocoapods)
 - Grab a coffee 
 - Implement some server side code to send push
 - Implement push kit in the sample app
