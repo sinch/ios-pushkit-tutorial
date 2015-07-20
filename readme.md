@@ -1,6 +1,6 @@
-# Save Energy In Your iOS 8 Apps With PushKit
+# How to use Pushkit for iOS VoIP push notifications
 
-The biggest challenge when writing communications apps is providing a quick experience that won’t drain your users’ battery. Today, we are going to investigate the new PushKit framework and make it run with our [Voice API](https://www.sinch.com/products/voice-api/). It will require some beta installs and server-side code, so expect to spend around 45 to 60 minutes here. This tutorial assumes that you are familiar with the old push system and how to create certificates.
+The biggest challenge when writing communications apps is providing a quick experience that won’t drain your users’ battery. We are going to investigate the new PushKit framework and make it run with our [Voice API](https://www.sinch.com/products/voice-api/). It will require some beta installs and server-side code, so expect to spend around 45 to 60 minutes here. This tutorial assumes that you are familiar with the old push system and how to create certificates.
 
 ## History
 Prior to iOS 8, developers needed to cater to the following scenarios:
