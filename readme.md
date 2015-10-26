@@ -33,7 +33,7 @@ With iOS 8, Apple introduced a new kind of push: VoIP push. There are a couple o
 The best thing? It allows you to execute code when the push arrives. My initial tests in a sandbox environment show that it’s pretty darn quick, and since you can handle all calls the same way, it reduces the time to implement our Voice API. 
 
 ### The bad news
-It only works on iOS 8. With our SDK (and probably any WebRTC SDK), it only works on iOS 8.1 (as of writing this, it's beta 1). This is because in 8.0, the compiler linked is a dynlib and is not able to locate PushKit framework for 32 bits when running on 64-bit hardware. At Sinch, we are working on bringing our SDK up to 64 bits, but for now, when you use us, you need to compile for armv7 and armv7s. 
+It only works on iOS 8. With our SDK (and probably any [WebRTC SDK](https://www.sinch.com/products/webrtc/)), it only works on iOS 8.1 (as of writing this, it's beta 1). This is because in 8.0, the compiler linked is a dynlib and is not able to locate PushKit framework for 32 bits when running on 64-bit hardware. At Sinch, we are working on bringing our SDK up to 64 bits, but for now, when you use us, you need to compile for armv7 and armv7s. 
 
 ## The steps
 - Install [Xcode 6.1](http://developer.apple.com)
